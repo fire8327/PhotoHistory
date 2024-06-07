@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="../Assets/CSS/main.css">
+    <script src="https://cdn.tailwindcss.com"></script> 
+</head>
+<body class="min-h-screen flex flex-col font-Rubik bg-black">
+    <header class="w-full bg-black py-4 text-white fixed z-[5]">
+        <div class="container mx-auto max-w-[1340px] px-4 flex items-center justify-between">
+            <a href="../index.html">
+                <img src="../Assets/Images/header/logo.png" alt="" class="w-16">
+            </a>
+            <nav id="menu" class="flex items-center gap-8 xl:gap-12 font-semibold max-lg:px-4 max-lg:text-left max-lg:border-t border-white max-lg:flex-col max-lg:w-full max-lg:h-[calc(100vh-87px)] max-lg:absolute max-lg:left-0 max-lg:top-0 max-lg:-translate-y-full max-lg:py-8 max-lg:bg-black transition-all duration-500">
+                <a href="news.html" class="max-lg:w-full flex flex-col after:w-0 after:bg-white after:h-px after:transition-all after:duration-500 hover:after:w-full">Новости</a>
+                <a href="expositions.html" class="max-lg:w-full flex flex-col after:w-0 after:bg-white after:h-px after:transition-all after:duration-500 hover:after:w-full">Выставки</a>
+                <a href="publications.html" class="max-lg:w-full flex flex-col after:w-0 after:bg-white after:h-px after:transition-all after:duration-500 hover:after:w-full">Публикации</a>
+                <a href="equipment.html" class="max-lg:w-full flex flex-col after:w-0 after:bg-white after:h-px after:transition-all after:duration-500 hover:after:w-full">Колллекция техники</a>
+                <a href="tales.html" class="max-lg:w-full flex flex-col after:w-0 after:bg-white after:h-px after:transition-all after:duration-500 hover:after:w-full">Байки от хранителя</a>
+                <a href="reviews.html" class="max-lg:w-full flex flex-col after:w-0 after:bg-white after:h-px after:transition-all after:duration-500 hover:after:w-full">Отзывы</a>
+            </nav>
+            <button class="lg:hidden" id="toggler">
+                <img src="../Assets/Images/header/menu.svg" alt="" class="w-8 h-8">
+            </button>
+        </div>
+    </header>
+
+    <section id="hero" class="min-h-screen bg-black w-full flex items-end text-white">
+        <div class="container mx-auto max-w-[1340px] px-4 flex items-center gap-10 max-lg:flex-col">
+            <div class="flex flex-col gap-4 w-full lg:w-3/5">
+                <p class="uppercase text-4xl md:text-5xl xl:text-7xl font-Playfair font-extrabold">Отзывы</p>
+                <div class="flex items-center max-lg:flex-col gap-6 text-xl md:text-2xl xl:text-3xl">
+                    <button class="px-4 py-2 rounded-lg border-2 border-white transition-all duration-500 hover:bg-white hover:text-black uppercase">Больше отзывов</button>
+                    <button id="popupToggler" class="px-4 py-2 rounded-lg border-2 border-white transition-all duration-500 hover:bg-white hover:text-black uppercase">Оставить отзыв</button>
+                </div>
+                <p class="text-lg md:text-xl xl:text-2xl">Ваше мнение важно для нас, поделитесь своими впечатлениеми!</p>
+            </div>
+            <img src="../Assets/Images/hero/Маскот_отзывы.png" alt="" class="w-full sm:w-2/3 md:w-1/2 lg:w-2/5">
+        </div>
+    </section>
+
+    <div id="popup" class="fixed transition-all duration-700 top-1/2 -translate-y-1/2 translate-x-[3000px] bg-white p-4 rounded-xl flex flex-col gap-6 z-[7]">
+        <p class="text-xl md:text-2xl xl:text-3xl">Оставьте ваш отзыв</p>
+        <input type="text" placeholder="Имя" class="bg-transparent focus:outline-none px-4 py-2 border-2 border-[#FF0043]/50 rounded-xl">
+        <textarea placeholder="Ваш отзыв..." class="bg-transparent focus:outline-none px-4 py-2 border-2 border-[#FF0043]/50 rounded-xl"></textarea>
+        <button class="px-4 py-2 rounded-lg border-2 border-black transition-all duration-500 hover:bg-black hover:text-white uppercase text-sm">Отправить</button>
+    </div>
+    <div id="popupOverlay" class="fixed inset-0 bg-black/50 h-screen z-[6] transition-all duration-500 -translate-x-full"></div>
+
+    <main class="container mx-auto max-w-[1340px] px-4 my-14 flex flex-col gap-14 text-white">
+        <div class="flex flex-col gap-6 relative w-full px-6 py-10 lg:px-10 lg:py-16">
+            <p class="text-xl md:text-2xl xl:text-3xl font-semibold
+            after:absolute after:w-12 after:h-11 after:top-0 after:left-0 after:border-l-8 after:border-t-8 after:border-[#FF0043]
+            before:absolute before:w-12 before:h-11 before:top-0 before:right-0 before:border-r-8 before:border-t-8 before:border-[#FF0043]">
+                Яковлева Татьяна, Литвинова Валя, Богомолова Ирина
+            </p>
+            <p class="text-lg md:text-xl xl:text-2xl
+            after:absolute after:w-12 after:h-11 after:bottom-0 after:left-0 after:border-l-8 after:border-b-8 after:border-[#FF0043]
+            before:absolute before:w-12 before:h-11 before:bottom-0 before:right-0 before:border-r-8 before:border-b-8 before:border-[#FF0043]">
+                Вчера мы были в МУЗЕЕ! Нужна была консультация профессионала и она случилась. Владимир Васильевич (на основе его коллекции создан музей) оказался любезнейшим и доброжелательным человеком с чувством юмора. В Музее мы были как дома, все просто и спокойно.
+            </p>
+        </div>
+        <div class="flex flex-col gap-6 relative w-full px-6 py-10 lg:px-10 lg:py-16">
+            <p class="text-xl md:text-2xl xl:text-3xl font-semibold
+            after:absolute after:w-12 after:h-11 after:top-0 after:left-0 after:border-l-8 after:border-t-8 after:border-[#FF0043]
+            before:absolute before:w-12 before:h-11 before:top-0 before:right-0 before:border-r-8 before:border-t-8 before:border-[#FF0043]">
+                Яковлева Татьяна, Литвинова Валя, Богомолова Ирина
+            </p>
+            <p class="text-lg md:text-xl xl:text-2xl
+            after:absolute after:w-12 after:h-11 after:bottom-0 after:left-0 after:border-l-8 after:border-b-8 after:border-[#FF0043]
+            before:absolute before:w-12 before:h-11 before:bottom-0 before:right-0 before:border-r-8 before:border-b-8 before:border-[#FF0043]">
+                Вчера мы были в МУЗЕЕ! Нужна была консультация профессионала и она случилась. Владимир Васильевич (на основе его коллекции создан музей) оказался любезнейшим и доброжелательным человеком с чувством юмора. В Музее мы были как дома, все просто и спокойно.
+            </p>
+        </div>
+    </main>
+
+    <footer class="mt-auto w-full bg-black py-4 text-white">
+        <div class="container mx-auto max-w-[1340px] px-4 flex flex-col gap-12">
+            <a href="../index.html">
+                <img src="../Assets/Images/header/logo.png" alt="" class="w-16">
+            </a>
+            <div class="flex max-lg:flex-col gap-6 xl:gap-8 text-base md:text-lg xl:text-xl">
+                <div class="flex flex-col gap-8 font-medium text-xl md:text-2xl xl:text-3xl text-[#FF0043]">
+                    <a href="news.html" class="w-fit flex flex-col after:w-0 after:bg-[#FF0043] after:h-px after:transition-all after:duration-500 hover:after:w-full">Новости</a>
+                    <a href="expositions.html" class="w-fit flex flex-col after:w-0 after:bg-[#FF0043] after:h-px after:transition-all after:duration-500 hover:after:w-full">Выставки</a>
+                    <a href="publications.html" class="w-fit flex flex-col after:w-0 after:bg-[#FF0043] after:h-px after:transition-all after:duration-500 hover:after:w-full">Публикации</a>
+                    <a href="equipment.html" class="w-fit flex flex-col after:w-0 after:bg-[#FF0043] after:h-px after:transition-all after:duration-500 hover:after:w-full">Колллекция техники</a>
+                    <a href="tales.html" class="w-fit flex flex-col after:w-0 after:bg-[#FF0043] after:h-px after:transition-all after:duration-500 hover:after:w-full">Байки от хранителя</a>
+                    <a href="reviews.html" class="w-fit flex flex-col after:w-0 after:bg-[#FF0043] after:h-px after:transition-all after:duration-500 hover:after:w-full">Отзывы</a>
+                </div>
+                <div class="w-full h-px lg:w-px lg:h-[320px] xl:h-[335px] bg-white"></div>             
+                <div class="flex flex-col gap-8">
+                    <p class="font-medium text-lg md:text-xl xl:text-2xl">Музей истории фотографии</p>  
+                    <p>Санкт-Петербург,<br> метро Петроградская,<br> ул. Профессора Попова, 23</p>
+                </div>                
+                <div class="w-full h-px lg:w-px lg:h-[320px] xl:h-[335px] bg-white"></div>          
+                <div class="flex flex-col gap-8">
+                    <p class="font-medium text-lg md:text-xl xl:text-2xl">Связать с нами</p>  
+                    <div class="flex flex-col gap-2">
+                        <a class="transition-all duration-500 hover:opacity-50" href="tel:+7 (812) 346-18-50">+7 (812) 346-18-50</a>
+                        <a class="transition-all duration-500 hover:opacity-50" href="tel:+7 (911) 722-92-17">+7 (911) 722-92-17</a>
+                        <a class="transition-all duration-500 hover:opacity-50" href="mailto:photohismus@gmail.com">photohismus@gmail.com</a>
+                    </div>
+                </div>
+                <div class="w-full h-px lg:w-px lg:h-[320px] xl:h-[335px] bg-white"></div>          
+                <div class="flex flex-col gap-8">
+                    <p class="font-medium text-lg md:text-xl xl:text-2xl">Больше нас</p>  
+                    <div class="flex items-center gap-6">
+                        <a href="" target="_blank">
+                            <img src="../Assets/Images/footer/vk.png" alt="" class="w-10 h-10 xl:w-14 xl:h-14 transition-all duration-500 hover:opacity-50">
+                        </a>
+                        <a href="" target="_blank">
+                            <img src="../Assets/Images/footer/tg.png" alt="" class="w-10 h-10 xl:w-14 xl:h-14 transition-all duration-500 hover:opacity-50">
+                        </a>
+                        <a href="" target="_blank">
+                            <img src="../Assets/Images/footer/whatsapp.png" alt="" class="w-10 h-10 xl:w-14 xl:h-14 transition-all duration-500 hover:opacity-50">
+                        </a>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </footer>
+
+    <button id="to-top-button" onclick="goToTop()" class="hidden fixed z-[4] bottom-5 md:bottom-8 right-5 md:right-8 w-12 h-12 rounded-full bg-[#FF0043] flex items-center justify-center">
+        <img src="../Assets/Images/footer/arrow.svg" alt="">               
+    </button>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../Assets/JS/main.js"></script>
+</body>
+</html>
