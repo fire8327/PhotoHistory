@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Байки от хранителя</title>
+    <link rel="stylesheet" href="../Assets/CSS/main.css">
+    <script src="https://cdn.tailwindcss.com"></script> 
+</head>
+<body class="min-h-screen flex flex-col font-Rubik">
+    <header class="w-full bg-black py-4 text-white fixed z-[5]">
+        <div class="container mx-auto max-w-[1340px] px-4 flex items-center justify-between">
+            <a href="../index.html">
+                <img src="../Assets/Images/header/logo.png" alt="" class="w-16">
+            </a>
+            <nav id="menu" class="flex items-center gap-8 xl:gap-12 font-semibold max-lg:px-4 max-lg:text-left max-lg:border-t border-white max-lg:flex-col max-lg:w-full max-lg:h-[calc(100vh-87px)] max-lg:absolute max-lg:left-0 max-lg:top-0 max-lg:-translate-y-full max-lg:py-8 max-lg:bg-black transition-all duration-500">
+                <a href="news.html" class="max-lg:w-full flex flex-col after:w-0 after:bg-white after:h-px after:transition-all after:duration-500 hover:after:w-full">Новости</a>
+                <a href="expositions.html" class="max-lg:w-full flex flex-col after:w-0 after:bg-white after:h-px after:transition-all after:duration-500 hover:after:w-full">Выставки</a>
+                <a href="publications.html" class="max-lg:w-full flex flex-col after:w-0 after:bg-white after:h-px after:transition-all after:duration-500 hover:after:w-full">Публикации</a>
+                <a href="equipment.html" class="max-lg:w-full flex flex-col after:w-0 after:bg-white after:h-px after:transition-all after:duration-500 hover:after:w-full">Колллекция техники</a>
+                <a href="tales.html" class="max-lg:w-full flex flex-col after:w-0 after:bg-white after:h-px after:transition-all after:duration-500 hover:after:w-full">Байки от хранителя</a>
+                <a href="reviews.html" class="max-lg:w-full flex flex-col after:w-0 after:bg-white after:h-px after:transition-all after:duration-500 hover:after:w-full">Отзывы</a>
+            </nav>
+            <button class="lg:hidden" id="toggler">
+                <img src="../Assets/Images/header/menu.svg" alt="" class="w-8 h-8">
+            </button>
+        </div>
+    </header>
+
+    <section id="hero" class="min-h-screen bg-[url(../Assets/Images/publications/4.jpg)] max-lg:bg-center bg-cover w-full flex items-end text-white relative">
+        <div class="container mx-auto max-w-[1340px] flex flex-col gap-2 px-4 relative z-[1] mb-16">
+            <p class="uppercase text-4xl md:text-5xl xl:text-7xl font-Playfair font-extrabold">Байки от хранителя</p>
+            <p class="text-base md:text-lg xl:text-xl">На этой странице Владимир Васильевич Платонов, главный хранитель МИФ, расскажет о том, как собирал коллекцию.</p>
+        </div>
+       <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black"></div>
+    </section>
+
+    <main class="flex flex-col w-full text-base md:text-lg xl:text-xl">
+        <!-- Блок, который нужно копировать -->
+        <div class="w-full min-h-screen bg-[#000000] text-white flex items-center justify-center">
+            <div class="container mx-auto max-w-[1340px] px-4 flex max-lg:flex-col gap-14">
+                <div class="flex flex-col gap-6 w-full lg:w-[65%]">
+                    <p class="uppercase text-3xl md:text-4xl xl:text-6xl font-Playfair font-bold">История первая</p>
+                    <p>Начну, пожалуй, с первого экспоната, с которого начал вести список подарков и дарителей. Это был далёкий 1985 год. Сотрудник ленинградского телевидения Разумов Герман, который накануне делал первую передачу о моей коллекции, принёс великолепный подарок — павильонную камеру с красным мехом.</p>
+                    <p>Шильдик на передней доске указывал на принадлежность оной Торговому дому И.И. Карпова. Вот это подарочек! «Нашёл на помойке! — сказал Герман, — решил принести». Камера хорошо сохранилась. Она была обмотана тканью и перевязана верёвкой и, вероятно, выброшена со старой мебелью.</p>
+                    <p>С этого подарка и началась тетрадь «Экспонаты». Большое спасибо Герману, что не прошёл мимо и не забыл про музей, который я начал организовывать в художественном училище имени Н. Рериха.</p>
+                </div>
+                <img src="../Assets/Images/tales/1.png" alt="" class="w-full lg:w-[35%]">
+            </div>
+        </div>
+    </main>
+
+    <footer class="mt-auto w-full bg-black py-4 text-white">
+        <div class="container mx-auto max-w-[1340px] px-4 flex flex-col gap-12">
+            <a href="../index.html">
+                <img src="../Assets/Images/header/logo.png" alt="" class="w-16">
+            </a>
+            <div class="flex max-lg:flex-col gap-6 xl:gap-8 text-base md:text-lg xl:text-xl">
+                <div class="flex flex-col gap-8 font-medium text-xl md:text-2xl xl:text-3xl text-[#FF0043]">
+                    <a href="news.html" class="w-fit flex flex-col after:w-0 after:bg-[#FF0043] after:h-px after:transition-all after:duration-500 hover:after:w-full">Новости</a>
+                    <a href="expositions.html" class="w-fit flex flex-col after:w-0 after:bg-[#FF0043] after:h-px after:transition-all after:duration-500 hover:after:w-full">Выставки</a>
+                    <a href="publications.html" class="w-fit flex flex-col after:w-0 after:bg-[#FF0043] after:h-px after:transition-all after:duration-500 hover:after:w-full">Публикации</a>
+                    <a href="equipment.html" class="w-fit flex flex-col after:w-0 after:bg-[#FF0043] after:h-px after:transition-all after:duration-500 hover:after:w-full">Колллекция техники</a>
+                    <a href="tales.html" class="w-fit flex flex-col after:w-0 after:bg-[#FF0043] after:h-px after:transition-all after:duration-500 hover:after:w-full">Байки от хранителя</a>
+                    <a href="reviews.html" class="w-fit flex flex-col after:w-0 after:bg-[#FF0043] after:h-px after:transition-all after:duration-500 hover:after:w-full">Отзывы</a>
+                </div>
+                <div class="w-full h-px lg:w-px lg:h-[320px] xl:h-[335px] bg-white"></div>             
+                <div class="flex flex-col gap-8">
+                    <p class="font-medium text-lg md:text-xl xl:text-2xl">Музей истории фотографии</p>  
+                    <p>Санкт-Петербург,<br> метро Петроградская,<br> ул. Профессора Попова, 23</p>
+                </div>                
+                <div class="w-full h-px lg:w-px lg:h-[320px] xl:h-[335px] bg-white"></div>          
+                <div class="flex flex-col gap-8">
+                    <p class="font-medium text-lg md:text-xl xl:text-2xl">Связать с нами</p>  
+                    <div class="flex flex-col gap-2">
+                        <a class="transition-all duration-500 hover:opacity-50" href="tel:+7 (812) 346-18-50">+7 (812) 346-18-50</a>
+                        <a class="transition-all duration-500 hover:opacity-50" href="tel:+7 (911) 722-92-17">+7 (911) 722-92-17</a>
+                        <a class="transition-all duration-500 hover:opacity-50" href="mailto:photohismus@gmail.com">photohismus@gmail.com</a>
+                    </div>
+                </div>
+                <div class="w-full h-px lg:w-px lg:h-[320px] xl:h-[335px] bg-white"></div>          
+                <div class="flex flex-col gap-8">
+                    <p class="font-medium text-lg md:text-xl xl:text-2xl">Больше нас</p>  
+                    <div class="flex items-center gap-6">
+                        <a href="" target="_blank">
+                            <img src="../Assets/Images/footer/vk.png" alt="" class="w-10 h-10 xl:w-14 xl:h-14 transition-all duration-500 hover:opacity-50">
+                        </a>
+                        <a href="" target="_blank">
+                            <img src="../Assets/Images/footer/tg.png" alt="" class="w-10 h-10 xl:w-14 xl:h-14 transition-all duration-500 hover:opacity-50">
+                        </a>
+                        <a href="" target="_blank">
+                            <img src="../Assets/Images/footer/whatsapp.png" alt="" class="w-10 h-10 xl:w-14 xl:h-14 transition-all duration-500 hover:opacity-50">
+                        </a>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </footer>
+
+    <button id="to-top-button" onclick="goToTop()" class="hidden fixed z-[4] bottom-5 md:bottom-8 right-5 md:right-8 w-12 h-12 rounded-full bg-[#FF0043] flex items-center justify-center">
+        <img src="../Assets/Images/footer/arrow.svg" alt="">               
+    </button>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../Assets/JS/main.js"></script>
+</body>
+</html>
