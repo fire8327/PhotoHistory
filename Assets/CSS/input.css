@@ -15,7 +15,7 @@
 }
 
 .header-menu {
-    @apply flex items-center gap-8 xl:gap-12 font-semibold max-lg:px-4 max-lg:text-left max-lg:border-t border-white max-lg:flex-col max-lg:w-full max-lg:h-[calc(100vh-87px)] max-lg:absolute max-lg:left-0 max-lg:top-0 max-lg:-translate-y-full max-lg:py-8 max-lg:bg-black transition-all duration-500
+    @apply flex items-center gap-8 xl:gap-12 font-semibold max-lg:px-4 max-lg:text-left max-lg:border-t border-white max-lg:flex-col max-lg:w-full max-lg:h-[calc(100vh-87px)] max-lg:absolute max-lg:left-0 max-lg:py-8 max-lg:bg-black transition-all duration-500
 }
 
 .header-link {
