@@ -16,7 +16,7 @@
                 <a href="Pages/news.html" class="header-link">Новости</a>
                 <a href="Pages/expositions.html" class="header-link">Выставки</a>
                 <a href="Pages/publications.html" class="header-link">Публикации</a>
-                <a href="Pages/equipment.html" class="header-link">Колллекция техники</a>
+                <a href="Pages/equipment.html" class="header-link">Коллекция техники</a>
                 <a href="Pages/tales.html" class="header-link">Байки от хранителя</a>
                 <a href="Pages/reviews.html" class="header-link">Отзывы</a>
             </nav>
@@ -36,7 +36,15 @@
         </div>
     </section>
 
-    <main class="container mx-auto max-w-[1340px] px-4 my-14 flex flex-col gap-14">
+    <div id="popup" class="fixed transition-all duration-700 top-1/2 -translate-y-1/2 translate-x-[3000px] bg-white p-4 rounded-xl flex flex-col gap-6 z-[7]">
+        <p class="text-xl md:text-2xl xl:text-3xl">Записаться на мероприятие</p>
+        <input type="text" placeholder="Имя" class="bg-transparent focus:outline-none px-4 py-2 border-2 border-[#c51d41]/50 rounded-xl">
+        <input type="text" placeholder="Номер телефона" class="bg-transparent focus:outline-none px-4 py-2 border-2 border-[#c51d41]/50 rounded-xl">
+        <button class="px-4 py-2 rounded-lg border-2 border-black transition-all duration-500 hover:bg-black hover:text-white uppercase text-sm">Записаться</button>
+    </div>
+    <div id="popupOverlay" class="fixed inset-0 bg-black/50 h-screen z-[6] transition-all duration-500 -translate-x-full"></div>
+
+    <main class="container mx-auto max-w-[1340px] px-4 mt-14 flex flex-col gap-14 md:gap-20 xl:gap-36">
         <div class="flex flex-col gap-8">
             <p class="uppercase text-2xl md:text-3xl xl:text-5xl font-Playfair font-bold">Карта музея</p>
             <img src="Assets/Images/map/main.png" alt="" class="w-full">
@@ -62,9 +70,51 @@
                 </div>
             </div>
         </div> 
+        <div class="flex max-lg:flex-col gap-8">
+            <div class="flex flex-col gap-6 lg:gap-16 w-full lg:w-1/2">
+                <p class="uppercase text-2xl md:text-3xl xl:text-5xl font-Playfair font-bold">Расписание музея</p>
+                <p class="font-medium text-xl md:text-2xl xl:text-3xl">Без экскурсионного обслуживания вход свободный!</p>
+                <div class="flex flex-col gap-4 text-base md:text-lg xl:text-xl">
+                    <p>Экскурсии для сборных групп одиночных посетителей проходят по субботам в 14:00.</p>
+                    <p>Стоимость — 300 рублей (полный билет), <br>200 рублей (льготный билет для студентов, школьников и пенсионеров).</p>
+                    <p>Информацию о мастер-классах и экскурсиях для организованных групп уточняйте по телефону</p>
+                    <p>Возможно посещение музея с индивидуальным экскурсионным обслуживанием.</p>
+                    <p>Расписание ближайших мероприятий на странице новости.</p>
+                </div>
+                <button id="popupToggler" class="w-fit font-medium text-xl md:text-2xl xl:text-3xl uppercase mt-auto px-4 py-2 border-2 border-black rounded-md">Записаться</button>
+            </div> 
+            <img src="Assets/Images/schedule/Mascot_raspisanie.png" alt="" class="w-full lg:w-1/2">
+        </div>
+        <div class="flex max-lg:flex-col gap-8">
+            <div class="flex flex-col gap-6 w-full lg:w-1/2">
+                <p class="uppercase text-2xl md:text-3xl xl:text-5xl font-Playfair font-bold">Архив выставок</p>
+                <p class="text-base md:text-lg xl:text-xl">Коллекция фотографий в нашем музее насчитывает около 30 000 единиц хранения, включая винтажные отпечатки на различных видах фотобумаги и все основные технологии фотографии — от дагерротипа до современных отпечатков. Мы также храним обширную коллекцию негативов на стекле и пленке. Познакомиться с нашей коллекцией можно на временных выставках, а большая часть фонда доступна для исследовательской работы в цифровом формате.</p>
+                <a href="Pages/expositions.html " class="w-fit font-medium text-xl md:text-2xl xl:text-3xl uppercase mt-auto px-4 py-2 border-2 border-black rounded-md">Больше выставок</a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 font-medium text-base md:text-lg xl:text-xl w-full lg:w-1/2">
+                <div class="flex flex-col gap-6">
+                    <img src="Assets/Images/expositions/1.jpg" alt="">
+                    <p>Актуальная выставка <br>"Внутренний лес"</p>
+                </div>
+                <div class="flex flex-col gap-6">
+                    <img src="Assets/Images/expositions/2.jpg" alt="">
+                    <p>Архив <br>"Так далеко, ТАК БЛИЗКО"</p>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col gap-8 lg:gap-16">
+            <p class="uppercase text-2xl md:text-3xl xl:text-5xl font-Playfair font-bold">Коллекция техники</p>
+            <p class="text-base md:text-lg xl:text-xl">Коллекция фототехники МИФ включает фотоаппараты, объективы, экспонометры, лабораторную технику, а также расходные материалы: фотопластинки, пленки, фотобумаги, фотохимию и насчитывает более 3000 единиц хранения.</p>
+            <a href="Pages/equipment.html " class="w-fit font-medium text-xl md:text-2xl xl:text-3xl uppercase px-4 py-2 border-2 border-black rounded-md">Коллекция техники</a>
+            <div class="grid grid-cols- md:grid-cols-3 gap-6">
+                <img src="Assets/Images/equipmnet/index1.jpg" alt="">
+                <img src="Assets/Images/equipmnet/index2.jpg" alt="">
+                <img src="Assets/Images/equipmnet/index3.jpg" alt="">
+            </div>
+        </div>
     </main>
 
-    <section id="contacts" class="w-full flex flex-col gap-8">
+    <section id="contacts" class="w-full flex flex-col gap-8 mt-14 md:mt-20 xl:mt-36">
         <div class="container mx-auto max-w-[1340px] px-4">
             <p class="uppercase text-2xl md:text-3xl xl:text-5xl font-Playfair font-bold max-lg:text-center">Контакты</p>
         </div>
@@ -111,7 +161,7 @@
                     <a href="Pages/news.html" class="w-fit flex flex-col after:w-0 after:bg-[#c51d41] after:h-px after:transition-all after:duration-500 hover:after:w-full">Новости</a>
                     <a href="Pages/expositions.html" class="w-fit flex flex-col after:w-0 after:bg-[#c51d41] after:h-px after:transition-all after:duration-500 hover:after:w-full">Выставки</a>
                     <a href="Pages/publications.html" class="w-fit flex flex-col after:w-0 after:bg-[#c51d41] after:h-px after:transition-all after:duration-500 hover:after:w-full">Публикации</a>
-                    <a href="Pages/equipment.html" class="w-fit flex flex-col after:w-0 after:bg-[#c51d41] after:h-px after:transition-all after:duration-500 hover:after:w-full">Колллекция техники</a>
+                    <a href="Pages/equipment.html" class="w-fit flex flex-col after:w-0 after:bg-[#c51d41] after:h-px after:transition-all after:duration-500 hover:after:w-full">Коллекция техники</a>
                     <a href="Pages/tales.html" class="w-fit flex flex-col after:w-0 after:bg-[#c51d41] after:h-px after:transition-all after:duration-500 hover:after:w-full">Байки от хранителя</a>
                     <a href="Pages/reviews.html" class="w-fit flex flex-col after:w-0 after:bg-[#c51d41] after:h-px after:transition-all after:duration-500 hover:after:w-full">Отзывы</a>
                 </div>
