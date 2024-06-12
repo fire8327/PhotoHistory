@@ -2051,12 +2051,12 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\.\.\/Assets\/Images\/publications\/4\.jpg\)\] {
-  background-image: url(../Assets/Images/publications/4.jpg);
-}
-
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+}
+
+.bg-\[url\(\'\.\.\/Images\/publications\/4\.jpg\'\)\] {
+  background-image: url('../Images/publications/4.jpg');
 }
 
 .from-transparent {
