@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Отзывы</title>
+    <title>Новости</title>
     <link rel="stylesheet" href="../Assets/CSS/main.css">
 </head>
-<body class="body font-Rubik bg-black">
+<body class="body font-Rubik">
     <header class="header">
         <div class="main-container flex items-center justify-between">
             <a href="../index.html">
@@ -26,52 +26,38 @@
         </div>
     </header>
 
-    <section id="hero" class="min-h-screen bg-black w-full flex items-end text-white">
-        <div class="container mx-auto max-w-[1340px] px-4 flex items-center lg:items-end gap-10 max-lg:flex-col">
-            <div class="flex flex-col gap-8 w-full lg:w-3/5 lg:mb-16">
-                <p class="uppercase text-3xl md:text-4xl xl:text-6xl font-Playfair font-extrabold">Отзывы</p>
-                <div class="flex items-center max-lg:flex-col gap-6 text-xl md:text-2xl xl:text-3xl">
-                    <button class="px-4 py-2 rounded-lg border-2 border-white transition-all duration-500 hover:bg-white hover:text-black uppercase">Больше отзывов</button>
-                    <button id="popupToggler" class="px-4 py-2 rounded-lg border-2 border-white transition-all duration-500 hover:bg-white hover:text-black uppercase">Оставить отзыв</button>
-                </div>
-                <p class="text-lg md:text-xl xl:text-2xl max-lg:text-center">Ваше мнение важно для нас, поделитесь своими впечатлениеми!</p>
-            </div>
-            <img src="../Assets/Images/hero/Маскот_отзывы.png" alt="" class="w-full sm:w-2/3 md:w-1/2 lg:w-2/5">
+    <section id="hero" class="min-h-screen bg-[url('../Images/publications/4.jpg')] max-lg:bg-center bg-cover w-full flex items-end text-white relative">
+        <div class="container mx-auto max-w-[1340px] flex flex-col gap-2 px-4 relative z-[1] mb-16">
+            <p class="uppercase text-3xl md:text-4xl xl:text-6xl font-Playfair font-extrabold">Байки от хранителя</p>
+            <p class="text-base md:text-lg xl:text-xl">На этой странице Владимир Васильевич Платонов, главный хранитель МИФ, расскажет о том, как собирал коллекцию.</p>
         </div>
+       <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black"></div>
     </section>
 
-    <div id="popup" class="fixed transition-all duration-700 top-1/2 -translate-y-1/2 translate-x-[3000px] bg-white p-4 rounded-xl flex flex-col gap-6 z-[7]">
-        <p class="text-xl md:text-2xl xl:text-3xl">Оставьте ваш отзыв</p>
-        <input type="text" placeholder="Имя" class="bg-transparent focus:outline-none px-4 py-2 border-2 border-[#c51d41]/50 rounded-xl">
-        <textarea placeholder="Ваш отзыв..." class="bg-transparent focus:outline-none px-4 py-2 border-2 border-[#c51d41]/50 rounded-xl"></textarea>
-        <button class="px-4 py-2 rounded-lg border-2 border-black transition-all duration-500 hover:bg-black hover:text-white uppercase text-sm">Отправить</button>
-    </div>
-    <div id="popupOverlay" class="fixed inset-0 bg-black/50 h-screen z-[6] transition-all duration-500 -translate-x-full"></div>
-
-    <main class="container mx-auto max-w-[1340px] px-4 my-14 flex flex-col gap-14 text-white">
-        <div class="flex flex-col gap-6 relative w-full px-6 py-10 lg:px-10 lg:py-16">
-            <p class="text-xl md:text-2xl xl:text-3xl font-semibold
-            after:absolute after:w-12 after:h-11 after:top-0 after:left-0 after:border-l-8 after:border-t-8 after:border-[#c51d41]
-            before:absolute before:w-12 before:h-11 before:top-0 before:right-0 before:border-r-8 before:border-t-8 before:border-[#c51d41]">
-                Яковлева Татьяна, Литвинова Валя, Богомолова Ирина
-            </p>
-            <p class="text-lg md:text-xl xl:text-2xl
-            after:absolute after:w-12 after:h-11 after:bottom-0 after:left-0 after:border-l-8 after:border-b-8 after:border-[#c51d41]
-            before:absolute before:w-12 before:h-11 before:bottom-0 before:right-0 before:border-r-8 before:border-b-8 before:border-[#c51d41]">
-                Вчера мы были в МУЗЕЕ! Нужна была консультация профессионала и она случилась. Владимир Васильевич (на основе его коллекции создан музей) оказался любезнейшим и доброжелательным человеком с чувством юмора. В Музее мы были как дома, все просто и спокойно.
-            </p>
+    <main class="container mx-auto max-w-[1340px] px-4 my-14 flex flex-col gap-14 text-base md:text-lg xl:text-xl">
+        <!-- Горизонтальный блок -->
+        <div class="flex flex-col gap-10">
+            <p class="uppercase text-2xl md:text-3xl xl:text-5xl font-Playfair font-bold max-lg:text-center">Наименование</p>
+            <div class="flex max-lg:flex-col gap-8">
+                <div class="w-full lg:w-1/2 lg:order-last">
+                    <img src="" alt="" class="w-full">
+                </div>
+                <div class="flex flex-col gap-4 w-full lg:w-1/2">
+                    <p>Текст новости</p>
+                    <p>Текст новости</p>
+                    <p>Текст новости</p>
+                </div>
+            </div>
         </div>
-        <div class="flex flex-col gap-6 relative w-full px-6 py-10 lg:px-10 lg:py-16">
-            <p class="text-xl md:text-2xl xl:text-3xl font-semibold
-            after:absolute after:w-12 after:h-11 after:top-0 after:left-0 after:border-l-8 after:border-t-8 after:border-[#c51d41]
-            before:absolute before:w-12 before:h-11 before:top-0 before:right-0 before:border-r-8 before:border-t-8 before:border-[#c51d41]">
-                Яковлева Татьяна, Литвинова Валя, Богомолова Ирина
-            </p>
-            <p class="text-lg md:text-xl xl:text-2xl
-            after:absolute after:w-12 after:h-11 after:bottom-0 after:left-0 after:border-l-8 after:border-b-8 after:border-[#c51d41]
-            before:absolute before:w-12 before:h-11 before:bottom-0 before:right-0 before:border-r-8 before:border-b-8 before:border-[#c51d41]">
-                Вчера мы были в МУЗЕЕ! Нужна была консультация профессионала и она случилась. Владимир Васильевич (на основе его коллекции создан музей) оказался любезнейшим и доброжелательным человеком с чувством юмора. В Музее мы были как дома, все просто и спокойно.
-            </p>
+        <!-- Вертикальный блок -->
+        <div class="flex max-lg:flex-col gap-14">
+            <div class="flex flex-col gap-6 w-full lg:w-[65%]">
+                <p class="uppercase text-2xl md:text-3xl xl:text-5xl font-Playfair font-bold">Наименование</p>
+                <p>Текст новости</p>
+                <p>Текст новости</p>
+                <p>Текст новости</p>                
+            </div>
+            <img src="../Assets/Images/tales/1.png" alt="" class="w-full lg:w-[35%]">
         </div>
     </main>
 
@@ -125,7 +111,7 @@
     <button id="to-top-button" onclick="goToTop()" class="hidden fixed z-[4] bottom-5 md:bottom-8 right-5 md:right-8 w-12 h-12 flex items-center justify-center">
         <img src="../Assets/Images/footer/arrow.png" alt="">               
     </button>
-
+    
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="../Assets/JS/main.js"></script>
 </body>
