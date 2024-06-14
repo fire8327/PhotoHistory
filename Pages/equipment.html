@@ -6,8 +6,10 @@
     <title>Коллекция техники</title>
     <link rel="stylesheet" href="../Assets/CSS/main.css">
 </head>
-<body class="body font-Rubik">
-    <header class="header">
+<body class="body font-Rubik bg-[url('../Images/equipmnet/bg.jpg')] relative">
+    <div class="inset-0 bg-white/80 fixed z-[0]"></div>
+
+    <header class="header z-[1]">
         <div class="main-container flex items-center justify-between">
             <a href="../index.html">
                 <img src="../Assets/Images/header/logo.png" alt="" class="w-14">
@@ -26,9 +28,9 @@
         </div>
     </header>
 
-    <section id="hero" class="min-h-screen w-full flex items-center justify-center">
+    <section id="hero" class="min-h-screen w-full flex items-center justify-center z-[1]">
         <div class="container mx-auto max-w-[1340px] px-4 flex items-center gap-10 flex-col text-center grow">
-            <img src="../Assets/Images/hero/Первая фотокамера.png" alt="" class="w-4/5 sm:w-1/2 md:w-1/3 lg:w-1/4 mt-20">
+            <img src="../Assets/Images/hero/equipment.gif" alt="" class="w-4/5 sm:w-1/2 md:w-1/3 lg:w-1/5 mt-20">
             <p class="uppercase text-3xl md:text-4xl xl:text-6xl font-Playfair font-extrabold">Коллекция <br> техники</p>
             <p class="text-base md:text-lg xl:text-xl">Страница будет наполняться постепенно. <br> Рассчитываем на ваше понимание.</p>
         </div>
@@ -42,7 +44,7 @@
     </div>
     <div id="popupOverlay" class="fixed inset-0 bg-black/50 h-screen z-[6] transition-all duration-500 -translate-x-full"></div>
 
-    <main class="container mx-auto max-w-[1340px] px-4 my-14 flex flex-col gap-20">
+    <main class="container mx-auto max-w-[1340px] px-4 my-14 flex flex-col gap-20 z-[1]">
         <div class="flex flex-col gap-8 text-center items-center">
             <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-16 uppercase font-medium text-xl md:text-2xl xl:text-3xl place-items-end">
             <div class="flex flex-col gap-6 items-center">
@@ -65,30 +67,30 @@
             <p class="text-base md:text-lg xl:text-xl">Коллекция нашего музея ввключает фототехники разных эпох, от камер обскура до современных устройств 21 века. <br> Эти экспонаты отражают эволюцию фотографического искусства и техники на протяжении столетий.</p>
         </div>
         <!-- 1 камера -->
-        <div class="flex flex-col gap-10 text-base md:text-lg xl:text-xl">
+        <div class="flex flex-col gap-10 text-base md:text-lg xl:text-xl items-center">
             <p class="uppercase text-2xl md:text-3xl xl:text-5xl font-Playfair font-bold max-lg:text-center">Welta Superfekta</p>
-            <div class="flex max-lg:flex-col gap-8">
+            <div class="flex max-lg:flex-col gap-8 lg:mx-auto lg:justify-center">
                 <div class="w-full lg:w-1/3">
                     <img src="../Assets/Images/equipmnet/camera1.jpg" alt="" class="w-full">
                 </div>
-                <div class="flex flex-col gap-4 w-full lg:w-2/3">
-                    <p>Производитель: Welta</p>
-                    <p>Годы выпуска: c 1935 г.</p>
-                    <p>
+                <div class="flex flex-col gap-4 w-full lg:w-fit">
+                    <p class="w-fit">Производитель: Welta</p>
+                    <p class="w-fit">Годы выпуска: c 1935 г.</p>
+                    <p class="w-fit">
                         Объективы: <br>
                         Meyer Gorlitz Trioplan 3.5/75 мм <br>
                         Meyer Gorlitz Trioplan 3.8/100 мм 
                     </p>
-                    <p>Затвор: Compur</p>
-                    <p>Выдержки: от 1 до 1/400 с, B, T</p>
-                    <p>Фотоматериал: плёнка типа 120</p>
-                    <p>Формат кадра: 6×9 см</p>
+                    <p class="w-fit">Затвор: Compur</p>
+                    <p class="w-fit">Выдержки: от 1 до 1/400 с, B, T</p>
+                    <p class="w-fit">Фотоматериал: плёнка типа 120</p>
+                    <p class="w-fit">Формат кадра: 6×9 см</p>
                 </div>
             </div>
-            <p>Двухобъективный складной среднеформатный зеркальный фотоаппарат.</p>
+            <p class="w-fit">Двухобъективный складной среднеформатный зеркальный фотоаппарат.</p>
         </div>
         <!-- 2 камера -->
-        <div class="flex flex-col gap-10 text-base md:text-lg xl:text-xl lg:items-end">
+        <div class="flex flex-col gap-10 text-base md:text-lg xl:text-xl">
             <p class="uppercase text-2xl md:text-3xl xl:text-5xl font-Playfair font-bold max-lg:text-center">Циклокамера (Цикло-камера)</p>
             <div class="flex max-lg:flex-col gap-8">
                 <div class="w-full lg:w-1/2 lg:order-last">
@@ -108,26 +110,26 @@
             <p>Деревянная камера ящичного типа. Конструкция С. В. Шарова. Заряжается перфорированной киноплёнкой, единовременный заряд до 65 снимков. На внутренней стороне дверцы аппарата имеется прижимная планка, благодаря которой плёнка плотнее подходит к кадровой рамке. По наружным сторонам рамки выступают два зубца, они соединены неподвижно с заслонкой и двигаются при перемещении последней. После съёмки заслонка задвигается до отказа в камеру и одновременно с этим передвигает плёнку на один кадр. Не выдвинутая заслонка преграждает доступ света через объектив и исключает возможность самопроизвольной съёмки при случайном открытии затвора.</p>
         </div>
         <!-- 3 камера -->
-        <div class="flex flex-col gap-10 text-base md:text-lg xl:text-xl">
-            <p class="uppercase text-2xl md:text-3xl xl:text-5xl font-Playfair font-bold max-lg:text-center">Welta Superfekta</p>
-            <div class="flex max-lg:flex-col gap-8">
+        <div class="flex flex-col gap-10 text-base md:text-lg xl:text-xl items-center">
+            <p class="uppercase text-2xl md:text-3xl xl:text-5xl font-Playfair font-bold max-lg:text-center">Наименование</p>
+            <div class="flex max-lg:flex-col gap-8 lg:mx-auto lg:justify-center">
                 <div class="w-full lg:w-1/3">
-                    <img src="../Assets/Images/equipmnet/camera3.jpg" alt="" class="w-full">
+                    <img src="" alt="" class="w-full">
                 </div>
-                <div class="flex flex-col gap-4 w-full lg:w-2/3">
-                    <p>Свойство 1</p>
-                    <p>Свойство 2</p>
-                    <p>Свойство 3</p>
+                <div class="flex flex-col gap-4 w-full lg:w-fit">
+                    <p class="w-fit">Свойство 1</p>
+                    <p class="w-fit">Свойство 2</p>
+                    <p class="w-fit">Свойство 3</p>
                 </div>
             </div>
-            <p>Описание</p>
+            <p class="w-fit">Описание</p>
         </div>
         <!-- 4 камера -->
-        <div class="flex flex-col gap-10 text-base md:text-lg xl:text-xl lg:items-end">
-            <p class="uppercase text-2xl md:text-3xl xl:text-5xl font-Playfair font-bold max-lg:text-center">Циклокамера (Цикло-камера)</p>
+        <div class="flex flex-col gap-10 text-base md:text-lg xl:text-xl">
+            <p class="uppercase text-2xl md:text-3xl xl:text-5xl font-Playfair font-bold max-lg:text-center">Наименование</p>
             <div class="flex max-lg:flex-col gap-8">
                 <div class="w-full lg:w-1/2 lg:order-last">
-                    <img src="../Assets/Images/equipmnet/camera4.jpg" alt="" class="w-full">
+                    <img src="" alt="" class="w-full">
                 </div>
                 <div class="flex flex-col gap-4 w-full lg:w-1/2">
                     <p>Свойство 1</p>
@@ -139,7 +141,7 @@
         </div>
     </main>
 
-    <footer class="mt-auto w-full bg-black py-4 text-white">
+    <footer class="mt-auto w-full bg-black py-4 text-white z-[1]">
         <div class="container mx-auto max-w-[1340px] px-4 flex flex-col gap-12">
             <a href="../index.html">
                 <img src="../Assets/Images/header/logo.png" alt="" class="w-16">

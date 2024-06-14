@@ -715,6 +715,10 @@ video {
   z-index: 7;
 }
 
+.z-\[0\] {
+  z-index: 0;
+}
+
 .col-span-full {
   grid-column: 1 / -1;
 }
@@ -2063,12 +2067,60 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-white\/50 {
+  background-color: rgb(255 255 255 / 0.5);
+}
+
+.bg-white\/70 {
+  background-color: rgb(255 255 255 / 0.7);
+}
+
+.bg-white\/80 {
+  background-color: rgb(255 255 255 / 0.8);
+}
+
+.bg-white\/85 {
+  background-color: rgb(255 255 255 / 0.85);
+}
+
+.bg-opacity-50 {
+  --tw-bg-opacity: 0.5;
+}
+
 .bg-\[url\(\'\.\.\/Images\/publications\/4\.jpg\'\)\] {
   background-image: url('../Images/publications/4.jpg');
 }
 
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+}
+
+.bg-\[url\(\'\'\)\] {
+  background-image: url('');
+}
+
+.bg-\[url\(\'\.\.\/\'\)\] {
+  background-image: url('../');
+}
+
+.bg-\[url\(\'\.\.\/Images\/equim\'\)\] {
+  background-image: url('../Images/equim');
+}
+
+.bg-\[url\(\'\.\.\/Images\/equipment\'\)\] {
+  background-image: url('../Images/equipment');
+}
+
+.bg-\[url\(\'\.\.\/Images\/equipment\/bg\.png\'\)\] {
+  background-image: url('../Images/equipment/bg.png');
+}
+
+.bg-\[url\(\'\.\.\/Images\/equipmnet\/bg\.png\'\)\] {
+  background-image: url('../Images/equipmnet/bg.png');
+}
+
+.bg-\[url\(\'\.\.\/Images\/equipmnet\/bg\.jpg\'\)\] {
+  background-image: url('../Images/equipmnet/bg.jpg');
 }
 
 .from-transparent {
@@ -2103,6 +2155,10 @@ video {
 
 .bg-cover {
   background-size: cover;
+}
+
+.bg-contain {
+  background-size: contain;
 }
 
 .bg-fixed {
@@ -3374,16 +3430,16 @@ video {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .md\:gap-10 {
+    gap: 2.5rem;
+  }
+
   .md\:gap-12 {
     gap: 3rem;
   }
 
   .md\:gap-20 {
     gap: 5rem;
-  }
-
-  .md\:gap-10 {
-    gap: 2.5rem;
   }
 
   .md\:px-6 {
@@ -3452,6 +3508,11 @@ video {
     order: 9999;
   }
 
+  .lg\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .lg\:mb-16 {
     margin-bottom: 4rem;
   }
@@ -3512,12 +3573,25 @@ video {
     width: 1px;
   }
 
+  .lg\:w-1\/5 {
+    width: 20%;
+  }
+
+  .lg\:w-fit {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
   .lg\:items-end {
     align-items: flex-end;
   }
 
   .lg\:items-center {
     align-items: center;
+  }
+
+  .lg\:justify-center {
+    justify-content: center;
   }
 
   .lg\:gap-16 {
@@ -3573,16 +3647,16 @@ video {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
+  .xl\:gap-16 {
+    gap: 4rem;
+  }
+
   .xl\:gap-36 {
     gap: 9rem;
   }
 
   .xl\:gap-8 {
     gap: 2rem;
-  }
-
-  .xl\:gap-16 {
-    gap: 4rem;
   }
 
   .xl\:px-10 {
